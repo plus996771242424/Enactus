@@ -1,0 +1,25 @@
+<ion-view title="Регистрация" hide-nav-bar="true" id="page12">
+  <ion-content padding="true" style="background: url(img/GOEh1OAFQTKNtL2bHVCI_bishkek.jpg) no-repeat center;background-size:cover;" class="manual-ios-statusbar-padding">
+    <div class="spacer" style="width: 300px; height: 188px;"></div>
+    <h3 style="text-align:center; color:white;">Регистрация</h3>
+    <form id="signup-form4" class="list">
+      <div class="spacer" style="width: 300px; height: 5px;"></div>
+      <ion-list id="signup-list11">
+        <label class="item item-input" id="signup-input3">
+          <span class="input-label">ФИО</span>
+          <input type="text" ng-model="user.name" placeholder="">
+        </label>
+        <label class="item item-input" id="signup-input4">
+          <span class="input-label">Email</span>
+          <input type="email"   ng-model="user.email" placeholder="">
+        </label>
+        <label class="item item-input" id="signup-input5">
+          <span class="input-label">Пароль</span>
+          <input type="password"   ng-model="user.password" placeholder="">
+        </label>
+      </ion-list>
+      <button ng-click="signup();" style="font-weight:600;border-radius:55px 55px 55px 55px;" class="button button-positive button-block">Зарегистрироваться</button>
+         <a ui-sref="login()" id="login-button7" style="font-weight:600;" class="button button-dark button-block button-clear">Войти</a>
+  </form>
+  </ion-content>
+</ion-view>
